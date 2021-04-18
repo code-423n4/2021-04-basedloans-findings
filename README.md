@@ -1,52 +1,40 @@
-# C4 contest results setup checklist:
-- [ ] Using this repo as a template, create a new private repo where contest finding reports will go (`sponsorname-results`)
+# Based Loans contest
+- $30k USDC main award pot
+- Findings submitted [using the C4 form](https://c4-basedloans.netlify.app/)
+- Starts 2021-04-28 00:00:00 UTC
+- Ends 2021-05-04 23:59:00 UTC
 
-Configure the contest report form in Netlify:
-- [ ] Go to app.netlify.com » create new site (from GitHub)
-- [ ] Choose `reporter` repo. Select advanced options.
-- [ ] Add env variables, changing the contest #, sponsors, and repo like so:
-```
-REACT_APP_C4_CONTEST=1
-REACT_APP_C4_SPONSOR=“Slingshot”
-GITHUB_OWNER="code-423n4"
-GITHUB_REPO=“slingshot-results"
-GITHUB_TOKEN=“ADD-C4-TOKEN-HERE”
-MAILGUN_KEY=“ADD-MAILGUUN-TOKEN-HERE”
-MAILGUN_DOMAIN="mg.code423n4.com"
-```
-- [ ] Click **deploy site**
-- [ ] Click **site settings** » **change site name** change netlify site name to `c4-{sponsor}` (so the contest form will be c4-sponsor.netlify.app)
+## Contest findings are submitted to this repo
 
-C4 public repo checklist:
-- [ ] Rename contest H1 below
-- [ ] Add link to report form in contest bullets below
-- [ ] Update pot sizes and start and end times in contest bullets below (ensure the total and dates match the [code423n4.com public contest data here](https://github.com/code-423n4/code423n4.com/tree/main/data/contests))
-- [ ] In Discord, send the sponsor contact the url for this repo to follow the instructions below and add contracts here.
-- [ ] Delete this checklist and await PR with GitHub handles to add to the public and private contest repos.
+Typically most findings come in **on the last day of the contest**.
 
-# Sponsorname Contest
-- XXX main award pot
-- XXX gas optimization award pot
-- Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
-- Submit findings [using the C4 form](https://c4-XXXXXXXX.netlify.app/)
-- [Read our guidelines for more details](https://code423n4.com/compete)
-- Starts XXX XXX XX 00:00 UTC
-- Ends XXX XXX XX 23:59 UTC
+As a sponsor, you have three critical tasks in the contest process:
 
-This repo will be made public before the start of the contest.
+1. Handle duplicate issues.
+2. Respond to issues.
+3. Share your mitigation of findings.
 
----
+Let's walk through each of these.
 
-## :handshake: Sponsors: Step By Step
-Each contest uses two repos: a public one (this one) and a _private_ one where issues are submitted using the contest form. The private contest repo will be made public after the contest has been judged and identified issues are mitigated by the sponsor team.
+## Handle duplicates
 
-Here's your part in getting the contest ready to go and joining the private repo.
+Because the wardens are submitting issues without seeing each others' submissions, there will always be findings that are clear duplicates. Other findings may use different language which ultimately describes the same issue but from different angles. Use your best judgement in identifying duplicates, and don't hesitate to reach out (via DM) to ask C4 for advice.
 
-- [ ] Fork the public repo for your contest. (This one.)
-- [ ] Modify this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing.
-- [ ] Add all of the code to this repo that you want reviewed.
-- [ ] Make sure your code is thoroughly commented using the [NatSpec format](https://docs.soliditylang.org/en/v0.5.10/natspec-format.html#natspec-format).
-- [ ] Create a PR with the above changes.
-- [ ] In your repo, list the GitHub handles to be added to the private contest repo.
+1. Determine the best and most thorough description of the finding among the set of duplicates. (At least a portion of the content of the most useful description will be used in the audit report.)
+2. Close the other duplicate issues and label them with `duplicate`
+3. Mention the primary issue # when closing the issue so that duplicate issues get linked.
 
-Please have contracts and documentation added to this repo **no less than 8 hours prior to contest start time.**
+## Respond to issues
+
+Label each finding as one of these:
+- `confirmed`, meaning: "Yes, this is a problem and we intend to fix it.")
+- `disputed`, meaning either: "We either not duplicate this issue" or "We disagree that this is an issue at all."
+- `acknowledged`, meaning: "Yes, technically the issue is correct, but we are not going to resolve it for xyz reasons."
+
+Add any necessary comments explaining your reasoning for this decision, noting that when the repo is open after all issues are mitigated, wardens will read these comments.
+
+## Share your mitigation of findings
+
+For each non-duplicate finding which you have confirmed, you will want to mitigate the issue before the contest report is made public.
+
+As part of that process, we ask that you create a pull request in your original repo for each finding and link to the PR in the issue the PR resolves. This will allow for complete transparency in showing the work of mitigating the issues found in the contest.
