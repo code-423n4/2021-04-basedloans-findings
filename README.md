@@ -8,11 +8,12 @@
 
 Typically most findings come in **on the last day of the contest**, so don't be alarmed at all if there's nothing here but crickets until the end of the contest.
 
-As a sponsor, you have three critical tasks in the contest process:
+As a sponsor, you have four critical tasks in the contest process:
 
 1. Handle duplicate issues.
-2. Respond to issues.
-3. Share your mitigation of findings.
+2. Weigh in on severity.
+3. Respond to issues.
+4. Share your mitigation of findings.
 
 Let's walk through each of these.
 
@@ -24,7 +25,7 @@ Because the wardens are submitting issues without seeing each others' submission
 2. Close the other duplicate issues and label them with `duplicate`
 3. Mention the primary issue # when closing the issue so that duplicate issues get linked.
 
-## Review severity 
+## Weight in on severity 
 
 Judges have the ultimate discretion in determining severity of issues as well as whether/how issues are considered duplicates. However, sponsor input is a significant criteria.
 
