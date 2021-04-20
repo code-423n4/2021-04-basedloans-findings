@@ -24,11 +24,13 @@ Because the wardens are submitting issues without seeing each others' submission
 2. Close the other duplicate issues and label them with `duplicate`
 3. Mention the primary issue # when closing the issue so that duplicate issues get linked.
 
-## Reviewing severity 
+## Review severity 
 
 Judges have the ultimate discretion in determining severity of issues as well as whether/how issues are considered duplicates. However, sponsor input is a significant criteria.
 
-If you disagree with a finding's severity, **leave the original severity label set by the warden and add the label `disagree with severity`** along with comment indicating your opinion for the judges to review. It is possible for issues to be considered `0 (Non-critical)`.
+If you disagree with a finding's severity, **leave the original severity label set by the warden and add the label** `disagree with severity` along with comment indicating your opinion for the judges to review. It is possible for issues to be considered `0 (Non-critical)`.
+
+Feel free to use the `question` label to anything you would like additional C4 input on.
 
 ## Respond to issues
 
