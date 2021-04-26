@@ -1,7 +1,7 @@
 # Based Loans contest
 - $30k USDC main award pot
 - Findings submitted [using the C4 form](https://c4-basedloans.netlify.app/)
-- Starts 2021-04-28 00:00:00 UTC
+- Starts 2021-04-29 00:00:00 UTC
 - Ends 2021-05-04 23:59:00 UTC
 
 ## Contest findings are submitted to this repo
