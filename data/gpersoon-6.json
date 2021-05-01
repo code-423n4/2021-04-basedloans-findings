@@ -1,0 +1,9 @@
+{
+  "contest": "6",
+  "handle": "gpersoon",
+  "address": "gpersoon.eth",
+  "risk": "1",
+  "title": "CarefulMath / safe math not allways used",
+  "issueId": 6,
+  "issueUrl": "https://github.com/code-423n4/2021-04-basedloans-findings/issues/6"
+}
