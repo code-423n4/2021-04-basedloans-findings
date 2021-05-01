@@ -1,0 +1,9 @@
+{
+  "contest": "6",
+  "handle": "gpersoon",
+  "address": "gpersoon.eth",
+  "risk": "G",
+  "title": "requireNoError can be optimized",
+  "issueId": 4,
+  "issueUrl": "https://github.com/code-423n4/2021-04-basedloans-findings/issues/4"
+}
