@@ -1,0 +1,9 @@
+{
+  "contest": "6",
+  "handle": "gpersoon",
+  "address": "gpersoon.eth",
+  "risk": "0",
+  "title": "seizeInternal isn't nonReentrant, unlike the rest of the Internal functions",
+  "issueId": 9,
+  "issueUrl": "https://github.com/code-423n4/2021-04-basedloans-findings/issues/9"
+}
