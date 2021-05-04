@@ -1,0 +1,9 @@
+{
+  "contest": "6",
+  "handle": "@cmichelio",
+  "address": "0x6823636c2462cfdcD8d33fE53fBCD0EdbE2752ad",
+  "risk": "1",
+  "title": "`UniswapAnchoredView`'s `PriceUpdated` event is never fired",
+  "issueId": 38,
+  "issueUrl": "https://github.com/code-423n4/2021-04-basedloans-findings/issues/38"
+}
