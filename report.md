@@ -1,3 +1,11 @@
+---
+sponsor: "Based Loans"
+slug: "2021-04-basedloans"
+date: "2021-05-27"
+title: "Based Loans"
+findings: "https://github.com/code-423n4/2021-04-basedloans-findings/issues"
+contest: 7
+---
 
 # Overview
 
